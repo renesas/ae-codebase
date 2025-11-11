@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-MCU/LMA/examples/YPMOD_RA2A2_3PH/RUNME" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">🛠️ RUNME.md — YPMOD-RA2A2-3PH | AE Codebase</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RA2A2_3PH/RUNME"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="🛠️ RUNME.md — YPMOD-RA2A2-3PH | AE Codebase"><meta data-rh="true" name="description" content="📦 Project Overview"><meta data-rh="true" property="og:description" content="📦 Project Overview"><link data-rh="true" rel="icon" href="/codebase/img/favicon.jfif"><link data-rh="true" rel="canonical" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RA2A2_3PH/RUNME"><link data-rh="true" rel="alternate" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RA2A2_3PH/RUNME" hreflang="en"><link data-rh="true" rel="alternate" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RA2A2_3PH/RUNME" hreflang="x-default"><link rel="stylesheet" href="/codebase/assets/css/styles.d7930541.css">
+<script src="/codebase/assets/js/runtime~main.f90681ff.js" defer="defer"></script>
+<script src="/codebase/assets/js/main.c4edab35.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme",window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.setAttribute("data-theme-choice","system"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/codebase/img/renesas_logomark_white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a href="https://www.renesas.com" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/codebase/img/renesas_logomark_white.png" alt="Renesas Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/codebase/img/renesas_logomark_white.png" alt="Renesas Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>🛠️ RUNME.md — YPMOD-RA2A2-3PH</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-project-overview">📦 Project Overview<a href="#-project-overview" class="hash-link" aria-label="Direct link to 📦 Project Overview" title="Direct link to 📦 Project Overview" translate="no">​</a></h2>
+<p>This project contains firmware written in C for evaluating LMA in an example application - it makes use of a serial terminal to interact with the project and uses onboard impulse LED&#x27;s for energy accumulation.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requirements">🧰 Requirements<a href="#-requirements" class="hash-link" aria-label="Direct link to 🧰 Requirements" title="Direct link to 🧰 Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-hardware">✅ Hardware<a href="#-hardware" class="hash-link" aria-label="Direct link to ✅ Hardware" title="Direct link to ✅ Hardware" translate="no">​</a></h3>
+<ul>
+<li class="">Evaluation PCB: <code>YPMOD-RA2A2-3PH</code> (For more information e.g., User Manual/Availability/Documentation please contact your local Renesas Sales/FAE)</li>
+<li class="">Microcontroller: <code>RA2A2 - R7FA2A2AD3CFP</code></li>
+<li class="">Debugger/Programmer: <code>Segger J-Link OB</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-software">💻 Software<a href="#-software" class="hash-link" aria-label="Direct link to 💻 Software" title="Direct link to 💻 Software" translate="no">​</a></h3>
+<ul>
+<li class="">IDE: <code>e2 studio 2025-10+</code></li>
+<li class="">FSP: <code>FSP 6.1.0+</code></li>
+<li class="">Flashing utility: <code>Renesas Flash Programmer 3.14+</code></li>
+<li class="">Serial terminal: <code>TeraTerm or PuTTY (9600 baud, 8-N-1)</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-project-structure">📁 Project Structure<a href="#-project-structure" class="hash-link" aria-label="Direct link to 📁 Project Structure" title="Direct link to 📁 Project Structure" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">├── LMA_YPMOD_RA2A2/        # e2 studio project</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">├── imgs/                   # images for this RUNME.md</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">└── RUNME.md                # This file</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-getting-started">🚀 Getting Started<a href="#-getting-started" class="hash-link" aria-label="Direct link to 🚀 Getting Started" title="Direct link to 🚀 Getting Started" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-clone-the-repository">1. Clone the Repository<a href="#1-clone-the-repository" class="hash-link" aria-label="Direct link to 1. Clone the Repository" title="Direct link to 1. Clone the Repository" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">    git clone https://github.com/lwray-renesas/LMA.git</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-import-project-to-e2-studio">2. Import project to e2 studio<a href="#2-import-project-to-e2-studio" class="hash-link" aria-label="Direct link to 2. Import project to e2 studio" title="Direct link to 2. Import project to e2 studio" translate="no">​</a></h3>
+<ol>
+<li class="">Open e2 studio.</li>
+<li class=""><code>File → Import → General → Existing Projects into Workspace</code></li>
+<li class="">Select <code>&lt;LMA_root&gt;/examples/YPMOD_RA2A2_3PH/LMA_YPMOD_RA2A2</code>.</li>
+<li class="">Do not copy into workspace.</li>
+<li class="">Click Finish.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Import Project" src="/codebase/assets/images/import-8395ea6eaaa64a651e8617649c957102.gif" title="Import Project" width="1912" height="1015" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-build-the-project">3. Build the project<a href="#3-build-the-project" class="hash-link" aria-label="Direct link to 3. Build the project" title="Direct link to 3. Build the project" translate="no">​</a></h3>
+<ol>
+<li class="">Right click the project</li>
+<li class="">Build Project</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Build Project" src="/codebase/assets/images/build-a6f2af57ece5731a0caf80c01ae203d9.gif" title="Build Project" width="1912" height="1015" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-serial-connection">4. Serial Connection<a href="#4-serial-connection" class="hash-link" aria-label="Direct link to 4. Serial Connection" title="Direct link to 4. Serial Connection" translate="no">​</a></h3>
+<p>Now to enable the evaluation, connect to the PMOD via USB-C on J16.</p>
+<p><img decoding="async" loading="lazy" alt="Serial Connection" src="/codebase/assets/images/conn-e29f454eb3f8a856054c4583128d2eb7.jpg" title="Serial Connection" width="4624" height="3472" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-testing">🧪 Testing<a href="#-testing" class="hash-link" aria-label="Direct link to 🧪 Testing" title="Direct link to 🧪 Testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-standalone-mode">🕹️ Standalone Mode<a href="#️-standalone-mode" class="hash-link" aria-label="Direct link to 🕹️ Standalone Mode" title="Direct link to 🕹️ Standalone Mode" translate="no">​</a></h3>
+<p>First we must make the connection between the USB-C JLOB on the PC side and the RA2A2 - to do this we must ypass the isolation and short the connections between J1 and J17, this can be seen below - please be aware this connection is not isolated and therefore you should NOT have the PMOD connected to the mains for this.</p>
+<p><img decoding="async" loading="lazy" alt="Non-Isolated Connection" src="/codebase/assets/images/conn_debug-4277b7cf69d3f6fa909bfb5b6ac513c5.jpg" title="Non-Isolated Connection" width="4624" height="3472" class="img_ev3q"></p>
+<p>Launch RFP and connect to PMOD using the following settings:</p>
+<ul>
+<li class="">Microcontroller: RA</li>
+<li class="">Tool: J-Link</li>
+<li class="">Interface: SWD</li>
+</ul>
+<p>As shown below.</p>
+<p><img decoding="async" loading="lazy" alt="RFP Create" src="/codebase/assets/images/rfp_create-6bacd2413b8551aae8e5e0bc669cffff.png" title="RFP Create" width="494" height="311" class="img_ev3q"></p>
+<p>Once connected, add the .srec file from the LMA Example project in the Debug folder and click start:
+<code>&lt;LMA_root&gt;/examples/YPMOD_RA2A2-3PH/LMA_YPMOD_RA2A2/Debug/LMA_YPMOD_RA2A2.srec</code></p>
+<p>As shown below.</p>
+<p><img decoding="async" loading="lazy" alt="RFP Flash" src="/codebase/assets/images/rfp_flash-02349a784ee28d9f76fc555f67520628.png" title="RFP Flash" width="608" height="655" class="img_ev3q"></p>
+<p>Now disconnect the cable between J1 and J17 to ensure isolation.</p>
+<p>Launch TeraTerm and connect to the JLink CDC UART virtual COM port with settings: 9600-8-N-1</p>
+<p><img decoding="async" loading="lazy" alt="TeraTerm Connect" src="/codebase/assets/images/teraterm_connect-767c6b98ac4672a5d1c5f820d5caee41.png" title="TeraTerm Connect" width="420" height="346" class="img_ev3q"></p>
+<p>If nothing is displayed, hit enter, and the help message should be shown.</p>
+<p><img decoding="async" loading="lazy" alt="Terminal Application" src="/codebase/assets/images/terminal_app-d38b00263e91e05f4585281f34ed3601.png" title="Terminal Application" width="938" height="610" class="img_ev3q"></p>
+<p>This example application is now running and it allows (among other commands) displaying live measurement parameters and performing a calibration.</p>
+<p>It also performs impulse LED control using D1 on the YPMOD-RA2A2-3PH to acumulate energy.</p>
+<p>This PMOD can now be connected to a live supply and behaviour observed.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-project-overview" class="table-of-contents__link toc-highlight">📦 Project Overview</a></li><li><a href="#-requirements" class="table-of-contents__link toc-highlight">🧰 Requirements</a><ul><li><a href="#-hardware" class="table-of-contents__link toc-highlight">✅ Hardware</a></li><li><a href="#-software" class="table-of-contents__link toc-highlight">💻 Software</a></li></ul></li><li><a href="#-project-structure" class="table-of-contents__link toc-highlight">📁 Project Structure</a></li><li><a href="#-getting-started" class="table-of-contents__link toc-highlight">🚀 Getting Started</a><ul><li><a href="#1-clone-the-repository" class="table-of-contents__link toc-highlight">1. Clone the Repository</a></li><li><a href="#2-import-project-to-e2-studio" class="table-of-contents__link toc-highlight">2. Import project to e2 studio</a></li><li><a href="#3-build-the-project" class="table-of-contents__link toc-highlight">3. Build the project</a></li><li><a href="#4-serial-connection" class="table-of-contents__link toc-highlight">4. Serial Connection</a></li></ul></li><li><a href="#-testing" class="table-of-contents__link toc-highlight">🧪 Testing</a><ul><li><a href="#️-standalone-mode" class="table-of-contents__link toc-highlight">🕹️ Standalone Mode</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-MCU/LMA/examples/YPMOD_RL78I1C_ROGOWSKI/RUNME" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">🛠️ RUNME.md — YPMOD-RL78I1C-ROGOWSKI | AE Codebase</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RL78I1C_ROGOWSKI/RUNME"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="🛠️ RUNME.md — YPMOD-RL78I1C-ROGOWSKI | AE Codebase"><meta data-rh="true" name="description" content="📦 Project Overview"><meta data-rh="true" property="og:description" content="📦 Project Overview"><link data-rh="true" rel="icon" href="/codebase/img/favicon.jfif"><link data-rh="true" rel="canonical" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RL78I1C_ROGOWSKI/RUNME"><link data-rh="true" rel="alternate" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RL78I1C_ROGOWSKI/RUNME" hreflang="en"><link data-rh="true" rel="alternate" href="https://renesas.github.io/codebase/MCU/LMA/examples/YPMOD_RL78I1C_ROGOWSKI/RUNME" hreflang="x-default"><link rel="stylesheet" href="/codebase/assets/css/styles.d7930541.css">
+<script src="/codebase/assets/js/runtime~main.f90681ff.js" defer="defer"></script>
+<script src="/codebase/assets/js/main.c4edab35.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>document.documentElement.setAttribute("data-theme",window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.setAttribute("data-theme-choice","system"),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/codebase/img/renesas_logomark_white.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a href="https://www.renesas.com" target="_blank" rel="noopener noreferrer" class="navbar__brand"><div class="navbar__logo"><img src="/codebase/img/renesas_logomark_white.png" alt="Renesas Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/codebase/img/renesas_logomark_white.png" alt="Renesas Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>🛠️ RUNME.md — YPMOD-RL78I1C-ROGOWSKI</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-project-overview">📦 Project Overview<a href="#-project-overview" class="hash-link" aria-label="Direct link to 📦 Project Overview" title="Direct link to 📦 Project Overview" translate="no">​</a></h2>
+<p>This project contains firmware written in C for evaluating LMA in an example application - it makes use of a serial terminal to interact with the project and uses onboard impulse LED&#x27;s for energy accumulation.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-requirements">🧰 Requirements<a href="#-requirements" class="hash-link" aria-label="Direct link to 🧰 Requirements" title="Direct link to 🧰 Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-hardware">✅ Hardware<a href="#-hardware" class="hash-link" aria-label="Direct link to ✅ Hardware" title="Direct link to ✅ Hardware" translate="no">​</a></h3>
+<ul>
+<li class="">Evaluation PCB: <code>YPMOD-RL78I1C-ROGOWSKI</code> (For more information e.g., User Manual/Availability/Documentation please contact your local Renesas Sales/FAE)</li>
+<li class="">Communication Adaptor: <code>YPMOD-USB-G10</code> (For more information e.g., User Manual/Availability/Documentation please contact your local Renesas Sales/FAE)</li>
+<li class="">Microcontroller: <code>RL78/I1C - R5F11TLG</code></li>
+<li class="">Debugger/Programmer: <code>E2 Lite</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-software">💻 Software<a href="#-software" class="hash-link" aria-label="Direct link to 💻 Software" title="Direct link to 💻 Software" translate="no">​</a></h3>
+<ul>
+<li class="">Toolchain: <code>Renesas CCRL V1.14.00+</code></li>
+<li class="">IDE: <code>e2 studio 2025-10+</code></li>
+<li class="">Flashing utility: <code>Renesas Flash Programmer 3.14+</code></li>
+<li class="">Serial terminal: <code>TeraTerm or PuTTY (9600 baud, 8-N-1)</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-project-structure">📁 Project Structure<a href="#-project-structure" class="hash-link" aria-label="Direct link to 📁 Project Structure" title="Direct link to 📁 Project Structure" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">├── LMA_YPMOD_RL78I1C_ROGOWSKI/     # e2 studio project</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">├── imgs/                           # images for this RUNME.md</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">└── RUNME.md                        # This file</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-getting-started">🚀 Getting Started<a href="#-getting-started" class="hash-link" aria-label="Direct link to 🚀 Getting Started" title="Direct link to 🚀 Getting Started" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-clone-the-repository">1. Clone the Repository<a href="#1-clone-the-repository" class="hash-link" aria-label="Direct link to 1. Clone the Repository" title="Direct link to 1. Clone the Repository" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">    git clone https://github.com/lwray-renesas/LMA.git</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-import-project-to-e2-studio">2. Import project to e2 studio<a href="#2-import-project-to-e2-studio" class="hash-link" aria-label="Direct link to 2. Import project to e2 studio" title="Direct link to 2. Import project to e2 studio" translate="no">​</a></h3>
+<ol>
+<li class="">Open e2 studio.</li>
+<li class=""><code>File → Import → General → Existing Projects into Workspace</code></li>
+<li class="">Select <code>&lt;LMA_root&gt;/examples/YPMOD_RL78I1C_ROGOWSKI/LMA_YPMOD_RL78I1C_ROGOWSKI</code>.</li>
+<li class="">Do not copy into workspace.</li>
+<li class="">Click Finish.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Import Project" src="/codebase/assets/images/import-7a12e0fa8fccf4f271c79984ce304475.gif" title="Import Project" width="1912" height="1015" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-build-the-project">3. Build the project<a href="#3-build-the-project" class="hash-link" aria-label="Direct link to 3. Build the project" title="Direct link to 3. Build the project" translate="no">​</a></h3>
+<ol>
+<li class="">Right click the project</li>
+<li class="">Build Project</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Build Project" src="/codebase/assets/images/build-ef8555140640187317f702237ee6b254.gif" title="Build Project" width="1912" height="1015" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-serial-connection">4. Serial Connection<a href="#4-serial-connection" class="hash-link" aria-label="Direct link to 4. Serial Connection" title="Direct link to 4. Serial Connection" translate="no">​</a></h3>
+<p>Now to enable the evaluation, connect the YPMOD-USB-G10 to a PC via USB and then to the YPMOD-RL78I1C-ROGOWSKI on J3 (PMOD Connection), shown in the image below.</p>
+<p><img decoding="async" loading="lazy" alt="Serial Connection" src="/codebase/assets/images/serial_conn-26b9d6de83387e2975f53d67cc3dcb94.jpg" title="Serial Connection" width="4624" height="3472" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-testing">🧪 Testing<a href="#-testing" class="hash-link" aria-label="Direct link to 🧪 Testing" title="Direct link to 🧪 Testing" translate="no">​</a></h2>
+<p>There are two ways to start testing this example project.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-standalone-mode">🕹️ Standalone Mode<a href="#️-standalone-mode" class="hash-link" aria-label="Direct link to 🕹️ Standalone Mode" title="Direct link to 🕹️ Standalone Mode" translate="no">​</a></h3>
+<p>First make the connection between the E2 Lite and the YPMOD-RL78I1C-ROGOWSKI as per the YPMOD-RL78I1C-ROGOWSKI user manual.
+For convenience there is an open source non-isolated programming adaptor which makes these connections <a href="https://github.com/lwray-renesas/RL78-I1C-PMOD-Programming-Adaptor---Non-Isolated" target="_blank" rel="noopener noreferrer" class="">here</a>.</p>
+<p>An example using this adpator is shown below.</p>
+<p><img decoding="async" loading="lazy" alt="Non-Isolated Connection" src="/codebase/assets/images/noniso_conn-1ed242ebd6e0726f00574a5ed3b13bcb.jpg" title="Non-Isolated Connection" width="4624" height="3472" class="img_ev3q"></p>
+<p>Launch RFP and connect to PMOD using the following settings:</p>
+<ul>
+<li class="">Microcontroller: RL78</li>
+<li class="">Tool: E2 emulator lite</li>
+<li class="">Power: None</li>
+</ul>
+<p>As shown below.</p>
+<p><img decoding="async" loading="lazy" alt="RFP Create" src="/codebase/assets/images/rfp_create-daa9739994edf6e5f00a5bb743d23322.png" title="RFP Create" width="494" height="311" class="img_ev3q"></p>
+<p>Once connected, add the .mot file from the LMA Example project in the HardwareDebug folder and click start:
+<code>&lt;LMA_root&gt;/examples/YPMOD_RL78I1C_ROGOWSKI/LMA_YPMOD_RL78I1C_ROGOWSKI/HardwareDebug/LMA_YPMOD_RL78I1C_ROGOWSKI.mot</code></p>
+<p>As shown below.</p>
+<p><img decoding="async" loading="lazy" alt="RFP Flash" src="/codebase/assets/images/rfp_flash-627ca235d9af52a67e07c90658d741cf.png" title="RFP Flash" width="606" height="650" class="img_ev3q"></p>
+<p>Now disconnect the debugger from J1.</p>
+<p>Launch TeraTerm and connect to the YPMOD-USB-G10 virtual COM port with settings: 9600-8-N-1</p>
+<p>If nothing is displayed, hit enter, and the help message should be shown.</p>
+<p><img decoding="async" loading="lazy" alt="Terminal Application" src="/codebase/assets/images/terminal_app-0535cdfd6ad5bcea2ae1aeeca4641fc3.png" title="Terminal Application" width="881" height="594" class="img_ev3q"></p>
+<p>This example application is now running and it allows (among other commands) displaying live measurement parameters and performing a calibration.</p>
+<p>It also performs impulse LED control using D1 on the YPMOD-RL78I1C-ROGOWSKI to acumulate energy.</p>
+<p>This PMOD can now be connected to a live supply and behaviour observed.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-isolated-debug-adaptor">🔌 Isolated Debug Adaptor<a href="#-isolated-debug-adaptor" class="hash-link" aria-label="Direct link to 🔌 Isolated Debug Adaptor" title="Direct link to 🔌 Isolated Debug Adaptor" translate="no">​</a></h3>
+<p>One way to run this project and get the full benefit of application debugging is to use an isolated debugging adaptor, rated at 5kv, this allows a developer to safely interact with the project code in a realistic environment i.e., debugging the project whilst the PMOD is connected to live mains voltages with real loads.</p>
+<p>An example of an open source adaptor is <a href="https://github.com/lwray-renesas/RL78-I1C-PMOD-Programming-Adaptor---Isolated" target="_blank" rel="noopener noreferrer" class="">here</a> and it is the one used in this step.</p>
+<p>Please note that to use the adaptor R18 and R19 on the YPMOD-RL78I1C-ROGOWSKI must be updated to 1k8 as per the modifications instructions in the readme for the <a href="https://github.com/lwray-renesas/RL78-I1C-PMOD-Programming-Adaptor---Isolated" target="_blank" rel="noopener noreferrer" class="">isolated programming adaptor</a>.</p>
+<p><img decoding="async" loading="lazy" alt="Isolated Connection" src="/codebase/assets/images/iso_conn-5ca275cbcc9ca85742cef3e7403ad32a.jpg" title="Isolated Connection" width="4624" height="3472" class="img_ev3q"></p>
+<p>For safe operation of this example project please note that 5kv isolation between PC/User and the live electronics is absolutely necessary - for more information on this please consult the YPMOD-RL78I1C-ROGOWSKI user manual.
+However the above adaptor aims to fulfill that requirement for the debug connection.</p>
+<p>Now inside e2 studio, select the example project and click the debug icon to start a debug session.</p>
+<p><img decoding="async" loading="lazy" alt="Debug" src="/codebase/assets/images/debug-2b2cc8b1f81acfe24f6837165ac22c84.gif" title="Debug" width="1912" height="1015" class="img_ev3q"></p>
+<p>Launch TeraTerm and connect to the YPMOD-USB-G10 virtual COM port with settings: 9600-8-N-1</p>
+<p>If nothing is displayed, hit enter, and the help message should be shown.</p>
+<p><img decoding="async" loading="lazy" alt="Terminal Application" src="/codebase/assets/images/terminal_app-0535cdfd6ad5bcea2ae1aeeca4641fc3.png" title="Terminal Application" width="881" height="594" class="img_ev3q"></p>
+<p>This example application is now running and it allows (among other commands) displaying live measurement parameters and performing a calibration.</p>
+<p>It also performs impulse LED control using D1 on the YPMOD-RL78I1C-ROGOWSKI to acumulate energy.</p>
+<p>This PMOD can now be connected to a live supply and behaviour observed.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-project-overview" class="table-of-contents__link toc-highlight">📦 Project Overview</a></li><li><a href="#-requirements" class="table-of-contents__link toc-highlight">🧰 Requirements</a><ul><li><a href="#-hardware" class="table-of-contents__link toc-highlight">✅ Hardware</a></li><li><a href="#-software" class="table-of-contents__link toc-highlight">💻 Software</a></li></ul></li><li><a href="#-project-structure" class="table-of-contents__link toc-highlight">📁 Project Structure</a></li><li><a href="#-getting-started" class="table-of-contents__link toc-highlight">🚀 Getting Started</a><ul><li><a href="#1-clone-the-repository" class="table-of-contents__link toc-highlight">1. Clone the Repository</a></li><li><a href="#2-import-project-to-e2-studio" class="table-of-contents__link toc-highlight">2. Import project to e2 studio</a></li><li><a href="#3-build-the-project" class="table-of-contents__link toc-highlight">3. Build the project</a></li><li><a href="#4-serial-connection" class="table-of-contents__link toc-highlight">4. Serial Connection</a></li></ul></li><li><a href="#-testing" class="table-of-contents__link toc-highlight">🧪 Testing</a><ul><li><a href="#️-standalone-mode" class="table-of-contents__link toc-highlight">🕹️ Standalone Mode</a></li><li><a href="#-isolated-debug-adaptor" class="table-of-contents__link toc-highlight">🔌 Isolated Debug Adaptor</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>
